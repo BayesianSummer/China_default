@@ -1,7 +1,7 @@
 {	
 	"V": ["China_Defaults", "Short_rates_up", "Equity_market_crash", "CMBS_spreads_widen", "Credit_spreads_widen"],
 	"E": [["China_Defaults", "Equity_market_crash"],
-		["China_defaults", "Credit_spreads_widen"],
+		["China_Defaults", "Credit_spreads_widen"],
 		["Short_rates_up", "Equity_market_crash"],
 		["CMBS_spreads_widen", "Credit_spreads_widen"]],
 	"Vdata": {
