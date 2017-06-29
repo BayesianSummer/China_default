@@ -1,0 +1,54 @@
+{	
+	"V": ["China_Defaults", "Short_rates_up", "Equity_market_crash", "CMBS_spreads_widen", "Credit_spreads_widen"],
+	"E": [["China_Defaults", "Equity_market_crash"],
+		["China_defaults", "Credit_spreads_widen"],
+		["Short_rates_up", "Equity_market_crash"],
+		["CMBS_spreads_widen", "Credit_spreads_widen"]],
+	"Vdata": {
+		"China_Defaults": {
+			"ord": 0,
+			"numoutcomes": 2,
+			"vals": ["0", "1"],
+			"parents": None,
+			"children": ["Equity_market_crash", "Credit_spreads_widen"],
+			"cprob": {}
+		},
+		
+		"Short_rates_up": {
+			"ord": 1,
+			"numoutcomes": 2,
+			"vals": ["0", "1"],
+			"parents": None,
+			"children": ["Equity_market_crash"],
+			"cprob": {}
+		},
+
+		"CMBS_spreads_widen": {
+			"ord": 2,
+			"numoutcomes": 2,
+			"vals": ["0", "1"],
+			"parents": None,
+			"children": ["Credit_spreads_widen"],
+			"cprob": {}
+		},
+		
+		"Equity_market_crash": {
+			"ord": 3,
+			"numoutcomes": 2,
+			"vals": ["0", "1"],
+			"parents": ["China_Defaults","Short_rates_up"],
+			"children": None,
+			"cprob": {}
+		},
+		
+		"Credit_spreads_widen": {
+			"ord": 4,
+			"numoutcomes": 2,
+			"vals": ["0", "1"],
+			"parents": ["China_Defaults","CMBS_spreads_widen"],
+			"children": None,
+			"cprob": {}
+		}
+		
+	}
+}
